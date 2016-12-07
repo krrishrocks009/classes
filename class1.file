@@ -1,0 +1,35 @@
+#!/usr/bin/env python
+
+#class variables
+#class #car class - number of wheels
+#instance #house class - purchase price
+#class #character class - max health 
+#instance #grid class - width and height 
+#instance #polygon class - the number of vertices
+
+#class variable - In object-oriented programming with classes, a class variable is a variable defined in a class of which a single copy exists, regardless of how many instances of the class exist. A class variable is not an instance variable. It is a special type of class attribute (or class property, field, or data member).
+
+#instance variable - In object-oriented programming with classes, an instance variable is a variable defined in a class (i.e. a member variable), for which each instantiated object of the class has a separate copy, or instance. An instance variable is similar to a class variable.
+
+class Character ():
+	
+	#static/class variables
+	total_number_of_characters = 0 
+	MAX_HEALTH = 150
+	
+	def __init__(self, name):
+		
+		#instance variables
+		self.name = name 
+		self.health = Character.MAX_HEALTH
+
+		Character.total_number_of_characters += 1
+
+bob = Character("Bob")
+ryan = Character("ryan stevens")
+
+print Character.total_number_of_characters
+print Character.MAX_HEALTH
+
+
+ 
